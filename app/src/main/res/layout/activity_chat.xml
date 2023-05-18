@@ -42,7 +42,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="20"
-            android:src="@drawable/sendmes"
+            android:src="@drawable/send_orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </LinearLayout>
