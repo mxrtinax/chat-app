@@ -10,8 +10,18 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/user_layout" />
+
+    <Button
+        android:id="@+id/go_to_feed"
+        android:layout_width="93dp"
+        android:layout_height="64dp"
+        android:text="Feed"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

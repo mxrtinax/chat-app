@@ -8,8 +8,10 @@ import android.provider.ContactsContract.Data
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatapp.Feed
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -35,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         userRecyclerView.layoutManager = LinearLayoutManager(this)
         userRecyclerView.adapter = adapter
+
+        val goToFeedButton: Button = findViewById(R.id.go_to_feed)
+        goToFeedButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, Feed::class.java)
+            startActivity(intent)
+        }
 
         mDbRef.child("user").addValueEventListener(object: ValueEventListener{
             @SuppressLint("NotifyDataSetChanged")
