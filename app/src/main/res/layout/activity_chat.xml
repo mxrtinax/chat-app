@@ -10,7 +10,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layoutManager="LinearLayoutManager"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
